@@ -5,7 +5,15 @@
         "target": "ESNext",
         "esModuleInterop": true,
         "allowJs": true,
+        "baseUrl": "./src",
         "experimentalDecorators": true,
-        "strictNullChecks": false
+        "strictNullChecks": false,
+        "paths":{
+            "@main/*": ["main/*"],
+            "@domain/*": ["domain/*"],
+            "@data/*": ["data/*"],
+            "@infra/*": ["infra/*"],
+            "@app/*": ["app/*"]
+        },
     }
 }
